@@ -1,0 +1,118 @@
+h1 {
+  color: #000000;
+  color: #008000;
+  color: #666666;
+  color: #69c4d9;
+  color: #0b85ec;
+  color: #0d8dc0;
+  color: #e0e0e0;
+  color: #eaeaea;
+  color: #f0f0f0;
+  color: #f9f9f9;
+  color: #19adff;
+  color: #1e73be;
+  color: #1e87f0;
+  color: #2097f5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.car-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -100;
+}
+.car-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.car-item-custom {
+  display: flex;
+}
+.shade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #2097f5;
+  z-index: -99;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+.sabe-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.sabe-logo--img {
+  width: 30%;
+}
+.btn-wrapper {
+  display: flex;
+
+  width: 600px;
+  /* height: 100px; */
+  gap: 20%;
+  color: white;
+}
+.btn-left {
+  width: 40%;
+  border: solid white 1px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+.btn-right {
+  width: 40%;
+  border: solid white 1px;
+  opacity: 0.5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+#pagefooter {
+  font-size: 1.4rem;
+}
+.link-btn {
+  width: 50%;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+}
+h2 {
+}
