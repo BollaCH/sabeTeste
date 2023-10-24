@@ -25,7 +25,7 @@ h1 {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 body {
@@ -52,6 +52,7 @@ body {
 }
 .car-item-custom {
   display: flex;
+  width: 100%;
 }
 .shade {
   position: absolute;
@@ -70,32 +71,33 @@ body {
   margin-top: 2.5rem;
 }
 .sabe-logo--img {
-  width: 30%;
+  width: 40%;
 }
 .btn-wrapper {
   display: flex;
 
-  width: 600px;
+  width: 60%;
   /* height: 100px; */
-  gap: 20%;
+  justify-content: space-between;
   color: white;
 }
 .btn-left {
   width: 40%;
-  border: solid white 1px;
+  border: solid white 2px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  opacity: 0.5;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 .btn-right {
   width: 40%;
-  border: solid white 1px;
+  border: solid white 2px;
   opacity: 0.5;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
@@ -104,15 +106,103 @@ body {
   justify-content: center;
   gap: 2rem;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 #pagefooter {
   font-size: 1.4rem;
 }
 .link-btn {
-  width: 50%;
+  width: 60%;
   padding: 1rem 1.5rem;
   border-radius: 15px;
 }
-h2 {
+
+.icon-arrow {
+  font-size: 48px;
+}
+/* .car-item-1 {
+  background-image: url(imgs/cdc-GDokEYnOfnE-unsplash.jpg);
+}
+.car-item-2 {
+  background-image: url(imgs/kenny-eliason-zFSo6bnZJTw-unsplash.jpg);
+}
+.car-item-3 {
+  background-image: url(imgs/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg);
+}
+.car-item-custom {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+/* background-position: center;
+} */
+
+/* ///////////////////////////////////////// */
+/* Btn  */
+/* ///////////////////////// */
+.btn-text {
+  text-align: center;
+}
+.btn-redirect {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  /* position: absolute; */
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 70%;
+  text-align: center;
+  color: #2097f5;
+  text-decoration: none;
+  font-size: 2em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0.5em 2em;
+  border: 2px solid #2097f5;
+  transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2097f5;
+  transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1),
+    left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  z-index: -1;
+}
+a::after {
+  content: "";
+  display: inline-block;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/109/109617.png");
+  position: absolute;
+  top: 0;
+  left: calc(100% - 3em);
+  right: 3em;
+  bottom: 0;
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+a:hover {
+  padding: 0.5em 3.5em 0.5em 0.5em;
+}
+a:hover::before {
+  left: calc(100% - 3em);
+  right: 0;
+  transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1),
+    left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+a:hover::after {
+  right: 0;
+  transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
 }
