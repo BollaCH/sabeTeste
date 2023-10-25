@@ -10,13 +10,25 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="options.css" />
   </head>
   <body>
+    <div class="radio-switch">
+      <button id="btn-1">Opção 1</button>
+      <button id="btn-2">Opção 2</button>
+    </div>
     <div
       id="carouselExampleFade"
       class="carousel slide carousel-fade car-custom"
@@ -61,27 +73,39 @@
     >
       <img src="imgs/Logo Sabe Brasil.png" alt="" class="sabe-logo--img" />
     </div>
-    <div class="btn-wrapper">
+    <div class="btn-wrapper option-1">
       <div class="btn-left animate__animated animate__fadeInLeft">
         <div class="btn-texto">
-          <h2>Acesse nossos jogos</h2>
+          <h2>ACESSE AQUI NOSSOS JOGOS</h2>
         </div>
         <div class="btn-redirect">
           <a
             href="https://sabebrasil.gameseditoralt.com.br/"
             target="_blank"
-            class=""
+            class="btn-um"
             >Entrar</a
           >
         </div>
       </div>
       <div class="btn-right animate__animated animate__fadeInRight">
-        <div class="btn-texto"><h2>Acesse nosso app</h2></div>
+        <div class="btn-texto"><h2>ACESSE AQUI NOSSO APP</h2></div>
         <div class="btn-redirect">
-          <a href="https://pruvo.app/" target="_blank" class="">Entrar</a>
+          <a href="https://pruvo.app/" target="_blank" class="btn-um">Entrar</a>
         </div>
       </div>
     </div>
+    <div class="container option-2 hidden">
+      <h1>Bem vindo ao portal Sabe Brasil</h1>
+      <div class="btns">
+        <div class="btn-jogos btn-left animate__animated animate__fadeInLeft">
+          <a href="" class="jogos-link">ACESSE NOSSOS JOGOS</a>
+        </div>
+        <div class="btn-app animate__animated animate__fadeInRight">
+          <a href="" class="app-link">ACESSE NOSSO APP</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container option-3"></div> -->
     <footer id="pagefooter">
       <p id="copyright"></p>
     </footer>
